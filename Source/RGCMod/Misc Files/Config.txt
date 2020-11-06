@@ -1,0 +1,800 @@
+Version
+	challengeCurve = float[]
+		0
+		1
+	Cloth Types = 16
+	Wood Types = 17
+	Metal Types = 12
+	Person Types = 16
+	captainHP = 2.5
+	captainDPS = 1.25
+	towerHP = 15
+	towerDPS = 1.5
+	hailSay = 32
+	attackSay = 30
+	lowHealthSay = 34
+	healedSay = 22
+	helpWaterSay = 8
+	productionSay = 4
+	demandSay = 4
+	deathSay = 36
+	drunkSay = 12
+	tipCount = 36
+	symbols = string[]
+		"Bird"
+		"Crown"
+		"Diamonds"
+		"Drake"
+		"Eagle"
+		"Fist"
+		"Flame"
+		"Horse"
+		"Leaves"
+		"Lion"
+		"Miasma"
+		"Phoenix"
+		"Pirate"
+		"Ring"
+		"Scorpion"
+		"Shark"
+		"Spider"
+		"Sun"
+		"Wavy"
+		"Tiger"
+		"Cutlass"
+		"WW"
+		"Dragon2"
+		"Gradient"
+		"Spots"
+		"Lines"
+		"Squares"
+		"Geometric"
+		"Geometric2"
+		"Medic"
+		"ComicSkull"
+		"Fire"
+		"Brood1"
+		"Dragon"
+		"Faize2 RGB"
+		"Pattern2 Repeat"
+		"rStar RGB"
+		"rStar"
+		"hs"
+		"sf"
+	Ships
+		Sloop = 0
+			Stats
+				Defense = 1
+				Offense = 1
+				Support = 1
+				Mobility = 1
+				Speed = 1.2
+			cargo = 5
+			townSize = 1
+			minTier = 0
+			maxTier = 2
+		Sloop of War = 100
+			Stats
+				Defense = 1.2
+				Offense = 1.3
+				Support = 1.1
+				Mobility = 1.1
+				Speed = 1.4
+			cargo = 5
+			townSize = 2
+			minTier = 1
+			maxTier = 3
+			price = 2000
+		Schooner = 200
+			Stats
+				Defense = 1.5
+				Offense = 1.7
+				Support = 1.5
+				Mobility = 1
+				Speed = 1.6
+			cargo = 5
+			townSize = 3
+			minTier = 2
+			maxTier = 5
+			faction = 3
+			price = 10000
+		Brigantine = 300
+			Stats
+				Defense = 2
+				Offense = 1.8
+				Support = 1.5
+				Mobility = 0.85
+				Speed = 1.2
+			cargo = 5
+			townSize = 4
+			minTier = 3
+			maxTier = 6
+			price = 15000
+		Royal Brigantine = 400
+			Stats
+				Defense = 2.5
+				Offense = 2
+				Support = 2.5
+				Mobility = 0.9
+				Speed = 1.4
+			cargo = 5
+			townSize = 5
+			minTier = 4
+			maxTier = 8
+			faction = 2
+			price = 30000
+		Brig of War = 500
+			Stats
+				Defense = 2.5
+				Offense = 2.8
+				Support = 2
+				Mobility = 0.9
+				Speed = 1.4
+			cargo = 5
+			townSize = 6
+			minTier = 4
+			maxTier = 8
+			price = 45000
+		Galleon = 600
+			Stats
+				Defense = 3.5
+				Offense = 2.8
+				Support = 4.5
+				Mobility = 0.8
+				Speed = 1.6
+			cargo = 5
+			townSize = 7
+			minTier = 7
+			faction = 4
+			price = 85000
+		Frigate = 700
+			Stats
+				Defense = 3.6
+				Offense = 3.6
+				Support = 3.6
+				Mobility = 0.85
+				Speed = 1.7
+			cargo = 5
+			townSize = 8
+			minTier = 7
+			price = 100000
+		Corvette = 800
+			Stats
+				Defense = 2.5
+				Offense = 5
+				Support = 3
+				Mobility = 1
+				Speed = 2.0
+			cargo = 5
+			townSize = 9
+			minTier = 9
+			faction = 3
+			price = 150000
+		Royal Corvette = 900
+			Stats
+				Defense = 2.5
+				Offense = 3
+				Support = 5
+				Mobility = 1
+				Speed = 2.2
+			cargo = 5
+			townSize = 9
+			minTier = 9
+			price = 150000
+		Ship of the Line = 1000
+			Stats
+				Defense = 5
+				Offense = 5
+				Support = 3
+				Mobility = 0.75
+				Speed = 1.4
+			cargo = 5
+			townSize = 9
+			minTier = 10
+			faction = 1
+			price = 150000
+		Turtle Ship = 1100
+			Stats
+				Defense = 15
+				Offense = 5
+				Support = 5
+				Mobility = 0.75
+				Speed = 1.2
+			cargo = 5
+			townSize = 10
+			minTier = 13
+			price = 1000000
+		Viking Ship = 1200
+			Stats
+				Defense = 3
+				Offense = 4
+				Support = 3.5
+				Mobility = 0.8
+				Speed = 1.7
+			cargo = 5
+			townSize = 10
+			minTier = 13
+			price = 500000
+		Clipper = 1300
+			Stats
+				Defense = 5
+				Offense = 5
+				Support = 4
+				Mobility = 0.8
+				Speed = 2.0
+			cargo = 5
+			townSize = 10
+			minTier = 13
+			price = 500000
+		Zeppelin = 10000
+			Stats
+				Defense = 2
+				Offense = 2.5
+				Support = 4.5
+				Mobility = 1.2
+				Speed = 2.5
+			cargo = 5
+			townSize = 10
+			minTier = 25
+			price = 1000000
+		Flyer = 11000
+			Stats
+				Defense = 2
+				Offense = 6
+				Support = 1
+				Mobility = 1.2
+				Speed = 3
+			cargo = 5
+			townSize = 10
+			minTier = 35
+			price = 1000000
+	Talents
+		Hull = 100
+			stat = true
+			strength = (50, 5000)
+		Sails = 100
+			stat = true
+			strength = (20, 2000)
+		Damage = 100
+			stat = true
+			strength = (20, 2000)
+		Accuracy = 100
+			stat = true
+			strength = (10, 1000)
+		Range = 100
+			stat = true
+			strength = (20, 2000)
+			min = 1
+		Crit = 10
+			stat = true
+			strength = (100, 1000)
+			min = 1
+		Mobility = 20
+			stat = true
+			strength = (10, 200)
+		Speed = 3
+			stat = true
+			strength = (250, 750)
+			min = 1
+		Diplomacy = 100
+			stat = true
+			strength = (20, 2000)
+		Armor = 100
+			stat = true
+			strength = (10, 1000)
+			min = 1
+		Volley = 10
+			strength = (10, 100)
+			min = 1
+		Luck = 20
+			strength = (20, 200)
+			min = 1
+		Fog = 10
+			script = "SkillFog"
+			active = true
+			strength = (25, 75)
+			duration = (2, 20)
+			min = 3
+		Deflect = 10
+			active = true
+			script = "SkillDeflect"
+			strength = (100, 1000)
+			duration = (3, 12)
+			min = 3
+		Poison = 10
+			active = true
+			script = "SkillPoison"
+			strength = (5, 50)
+			duration = (5, 15)
+			min = 3
+		Haste = 10
+			active = true
+			script = "SkillHaste"
+			strength = (10, 100)
+			duration = (10, 20)
+			min = 3
+		Improve = 10
+			active = true
+			script = "SkillImprove"
+			strength = (15, 150)
+			duration = (100, 1000)
+			min = 3
+		Inferno = 10
+			active = true
+			script = "SkillInferno"
+			strength = (4, 40)
+			duration = (1, 10)
+			min = 3
+		Def0 = 100
+			buff = "BuffDef0"
+			strength = (10, 1000)
+			min = 1
+		Def1 = 100
+			buff = "BuffDef1"
+			strength = (5, 500)
+			min = 1
+		Def2 = 100
+			strength = (5, 500)
+			min = 1
+		Def3 = 100
+			buff = "BuffDef3"
+			strength = (10, 1000)
+			min = 1
+		Off0 = 100
+			strength = (4, 400)
+			min = 1
+		Off1 = 100
+			buff = "BuffOff1"
+			strength = (5, 500)
+			min = 1
+		Off2 = 100
+			strength = (5, 500)
+			min = 1
+		Off3 = 100
+			strength = (10, 1000)
+			min = 1
+		Sup0 = 100
+			strength = (3, 300)
+			min = 1
+		Sup1 = 100
+			buff = "BuffSup1"
+			strength = (4, 400)
+			min = 1
+		Sup2 = 100
+			strength = (10, 1000)
+			min = 1
+		Sup3 = 100
+			strength = (5, 500)
+			min = 1
+	Skills
+		SkillChainShot
+			cooldown = 4
+			group = 1
+		SkillNormalVolley
+			cooldown = 4
+			group = 1
+		SkillRecklessVolley
+			cooldown = 2
+			group = 1
+		SkillAimedVolley
+			cooldown = 6
+			group = 1
+		SkillDeflect
+			cooldown = 18
+			group = 2
+		SkillHaste
+			cooldown = 30
+			group = 2
+		SkillInferno
+			cooldown = 20
+			group = 3
+		SkillPoison
+			cooldown = 20
+			group = 3
+		SkillFog
+			cooldown = 15
+			group = 3
+		SkillMortar
+			cooldown = 15
+			group = 3
+		SkillWater
+			cooldown = 15
+			group = 3
+		SkillImprove
+			cooldown = 12
+		SkillRepair
+			cooldown = 1
+		SkillFireBreath
+			cooldown = 12
+			group = 3
+	Factions
+		Fac0
+			tp = 1000
+			symbol = "Pirate"
+			pennant = "Pirate RGB"
+			color = (0.1, 0.1, 0.1, 1)
+			pennant0 = (0, 0, 0, 1)
+			pennant1 = (0.2, 0.2, 0.2, 1)
+			sail0 = (0.2, 0.2, 0.2, 1)
+			sail1 = (1, 1, 1, 1)
+			name0 = (0.15, 0, 0, 1)
+			name1 = (0, 0, 0, 1)
+			name2 = (0.698, 0, 0, 1)
+			Skills = string[]
+				"SkillRepair"
+				"SkillNormalVolley"
+			Multipliers
+				Hull = 1
+				Sails = 1
+				Speed = 1
+				Mobility = 1
+				Damage = 1
+				Accuracy = 1
+				Diplomacy = 1
+		Fac1
+			affinity = "Combat"
+			rep = 50
+			symbol = "Lion"
+			color = (1, 0, 0, 1)
+			pennant0 = (1, 0, 0, 1)
+			pennant1 = (0.25, 0, 0, 1)
+			hull0 = (0.89, 0.165, 0, 1)
+			hull1 = (0.3, 0.3, 0.3, 1)
+			sail0 = (1, 1, 1, 1)
+			sail1 = (0.5, 0, 0, 1)
+			name0 = (1, 0.125, 0.125, 1)
+			name1 = (0.318, 0, 0, 1)
+			name2 = (0, 0, 0, 1)
+			Skills = string[]
+				"SkillRepair"
+				"SkillRecklessVolley"
+			Multipliers
+				Hull = 1.2
+				Sails = 1
+				Speed = 0.8
+				Mobility = 1.2
+				Damage = 1.1
+				Accuracy = 0.9
+				Diplomacy = 0.8
+		Fac2
+			affinity = "Questing"
+			rep = 50
+			symbol = "Drake"
+			color = (0.25, 1, 0, 1)
+			pennant0 = (0, 1, 0, 1)
+			pennant1 = (0, 0.25, 0, 1)
+			hull0 = (0.184, 0.184, 0.184, 1)
+			hull1 = (1, 0.859, 0.635, 1)
+			sail0 = (0, 0.353, 0.047, 1)
+			sail1 = (0.243, 1, 0, 1)
+			name0 = (0.663, 1, 0.125, 1)
+			name1 = (0, 0.318, 0.055, 1)
+			name2 = (0, 0.075, 0.027, 1)
+			Skills = string[]
+				"SkillRepair"
+				"SkillNormalVolley"
+			Multipliers
+				Hull = 1
+				Sails = 1
+				Speed = 1
+				Mobility = 1
+				Damage = 0.9
+				Accuracy = 0.9
+				Diplomacy = 1.2
+		Fac3
+			affinity = "Exploration"
+			rep = 50
+			symbol = "Bird"
+			color = (0, 0.5, 1, 1)
+			pennant0 = (0, 0.5, 1, 1)
+			pennant1 = (0, 0.125, 0.25, 1)
+			hull0 = (0.192, 0.345, 0.47, 1)
+			hull1 = (1, 0.855, 0.612, 1)
+			sail0 = (0, 0.278, 0.478, 1)
+			sail1 = (0.42, 0.663, 1, 1)
+			name0 = (0.318, 0.914, 1, 1)
+			name1 = (0, 0.184, 0.486, 1)
+			name2 = (0, 0.05, 0.075, 1)
+			Skills = string[]
+				"SkillRepair"
+				"SkillAimedVolley"
+			Multipliers
+				Hull = 0.8
+				Sails = 0.8
+				Speed = 1.2
+				Mobility = 1
+				Damage = 1.2
+				Accuracy = 1.2
+				Diplomacy = 0.9
+		Fac4
+			affinity = "Trading"
+			rep = 50
+			symbol = "Ring"
+			color = (1, 0.7, 0, 1)
+			pennant0 = (1, 0.68, 0, 1)
+			pennant1 = (0.35, 0.25, 0, 1)
+			hull0 = (1, 0.859, 0.635, 1)
+			hull1 = (0.376, 0.235, 0, 1)
+			sail0 = (1, 0.925, 0.816, 1)
+			sail1 = (0.553, 0.33, 0, 1)
+			name0 = (1, 0.906, 0.604, 1)
+			name1 = (1, 0.6, 0, 1)
+			name2 = (0.035, 0.024, 0, 0.804)
+			Skills = string[]
+				"SkillRepair"
+				"SkillNormalVolley"
+			Multipliers
+				Hull = 1.1
+				Sails = 0.9
+				Speed = 1.1
+				Mobility = 0.9
+				Damage = 1
+				Accuracy = 0.9
+				Diplomacy = 1.1
+		Fac5
+			capAnywhere = true
+			tp = 50
+			rep = 1000
+			symbol = "Spider"
+			color = (0.65, 0.2, 1, 1)
+			pennant0 = (0.745, 0.153, 1, 1)
+			pennant1 = (0.11, 0, 0.3, 1)
+			hull0 = (0.741, 0.573, 0.42, 1)
+			hull1 = (0.133, 0.133, 0.133, 1)
+			sail0 = (0.247, 0, 0.286, 1)
+			sail1 = (0.765, 0.22, 1, 1)
+			name0 = (0.9, 0.17, 1, 1)
+			name1 = (0.26, 0, 0.7, 1)
+			name2 = (0, 0, 0, 0.804)
+			Skills = string[]
+				"SkillRepair"
+				"SkillNormalVolley"
+			Multipliers
+				Hull = 1.1
+				Sails = 1
+				Speed = 1.1
+				Mobility = 1
+				Damage = 1.1
+				Accuracy = 1
+				Diplomacy = 1.1
+		Fac6
+			capAnywhere = true
+			followers = 2
+			tp = 150
+			rep = 0
+			symbol = "Fire"
+			color = (1, 0.35, 0, 1)
+			pennant0 = (1, 0.35, 0, 1)
+			pennant1 = (0.5, 0.15, 0, 1)
+			sail0 = (0.1490196, 0.1490196, 0.1490196, 1)
+			sail1 = (1, 0.35, 0, 1)
+			hull0 = (0.1152941, 0.1152941, 0.1152941, 1)
+			hull1 = (0.44, 0.44, 0.44, 1)
+			name0 = (1, 0.35, 0, 1)
+			name1 = (0.7, 0.25, 0, 1)
+			name2 = (0, 0, 0, 0.804)
+			Skills = string[]
+				"SkillRepair"
+				"SkillAimedVolley"
+			Multipliers
+				Hull = 1.2
+				Sails = 1.2
+				Speed = 1.1
+				Mobility = 1
+				Damage = 1.2
+				Accuracy = 1.2
+				Diplomacy = 1.2
+	Loot Resources
+		gold = 50
+		wood = 8
+		stone = 6
+		powder = 4
+	Prices
+		Res0 = 600
+		Res1 = 350
+		Res2 = 300
+		Res3 = 450
+		Res4 = 750
+		Res5 = 500
+		Res6 = 1000
+		Res7 = 2000
+		Res8 = 300
+		Res9 = 300
+		Res10 = 300
+		Res11 = 300
+		Res12 = 450
+		Res13 = 350
+		Res14 = 350
+		Res15 = 600
+		Res16 = 1800
+		Res17 = 500
+		Res18 = 400
+		Res19 = 750
+		Res20 = 500
+		Res21 = 1000
+		Res22 = 1200
+		Res23 = 1200
+	Town Production
+		..xx.xx.xx......xx...... = 0
+		xx.....xxx......xx...... = 1
+		xxxx...x...x......x..... = 2
+		.....xx..x.xx.x..xx.x... = 3
+		.x...x..x.xx.x.x..xx.... = 4
+		.x..x...x.x..x.x...x.x.x = 5
+		x...x.x..x.x.xx.......xx = 6
+		x.x....x.xx.x....x...xxx = 7
+		...xxx.xx...x.x.....xxx. = 8
+	Quests
+		QuestDiscover
+			townSize = 1
+			reward = 5
+			xp = 250
+			icon  = "Item - Scroll"
+			target = "Hidden Town"
+			faction = 3
+		QuestTrade
+			townSize = 1
+			reward = 0
+			xp = 100
+			icon = "Item - Scroll"
+			faction = 4
+			target = "Excess"
+		QuestDelivery
+			townSize = 1
+			reward = 5
+			xp = 250
+			icon  = "Item - Crates"
+			target = "Neutral Town"
+			faction = 4
+		QuestPirate
+			townSize = 1
+			reward = 4
+			xp = 150
+			icon = "Item - Scroll"
+			faction = 1
+			target = "Pirate"
+		QuestMigrants
+			townSize = 2
+			reward = 5
+			xp = 250
+			icon  = "Item - Crew1"
+			target = "Neutral Town"
+			faction = 3
+		QuestMigrants2
+			townSize = 2
+			reward = 5
+			xp = 250
+			icon  = "Item - Crew2"
+			target = "Neutral Town"
+			faction = 2
+		QuestCapture
+			available = 0
+			townSize = 2
+			reward = 8
+			xp = 400
+			icon = "Item - Barrel"
+			target = "Hostile Town"
+			faction = 2
+		QuestDefend
+			townSize = 3
+			reward = 5
+			xp = 150
+			icon = "Item - Scroll"
+			faction = 1
+			target = "Pirate"
+			reputation = 25
+		QuestColonists
+			townSize = 3
+			reward = 5
+			xp = 450
+			icon = "Item - Crew1"
+			Attach = string[]
+				SkillBuildTown
+			faction = 3
+			reputation = 50
+			chance = 0.5
+		QuestLighthouse
+			townSize = 4
+			reward = 7
+			xp = 250
+			icon = "Item - Crates"
+			target = "New Lighthouse"
+			Attach = string[]
+				SkillBuildLighthouse
+			faction = 4
+			reputation = 50
+			chance = 0.5
+		QuestTower
+			townSize = 4
+			reward = 8
+			xp = 450
+			icon = "Item - Crates"
+			target = "New Tower"
+			Attach = string[]
+				SkillBuildTower
+			faction = 4
+			reputation = 75
+			chance = 0.5
+		QuestSubdue
+			townSize = 4
+			reward = 8
+			xp = 350
+			icon = "Item - Scroll"
+			faction = 2
+			target = "Pirate"
+			reputation = 100
+		QuestSmallBoss
+			townSize = 5
+			reward = 12
+			xp = 550
+			icon = "Item - Scroll"
+			faction = 1
+			target = "Pirate Captain"
+			reputation = 500
+			chance = 0.5
+		QuestRoundtrip
+			townSize = 2
+			reward = 10
+			xp = 500
+			icon  = "Item - Scroll"
+			target = "Neutral Town"
+			faction = 3
+		QuestSightseeing
+			townSize = 3
+			reward = 25
+			xp = 1250
+			icon  = "Item - Crew1"
+			target = "Neutral Town"
+			faction = 4
+			chance = 0.5
+		QuestSmuggle
+			townSize = 4
+			reward = 30
+			xp = 1500
+			icon  = "Item - Crates"
+			target = "Neutral Town"
+			faction = 2
+			chance = 0.5
+	Damage Config
+		Direct = DamageConfig
+			armorEffect = 0
+			shipDamage = 1
+			airShipDamage = 1
+			structureDamage = 1
+			sailDamage = 1
+		Physical = DamageConfig
+			armorEffect = 1
+			shipDamage = 1
+			airShipDamage = 1
+			structureDamage = 1
+			sailDamage = 1
+		Heat = DamageConfig
+			armorEffect = 0.6
+			shipDamage = 0.9
+			airShipDamage = 1.1
+			structureDamage = 0.7
+			sailDamage = 1.3
+		Cold = DamageConfig
+			armorEffect = 0.8
+			shipDamage = 1.1
+			airShipDamage = 0.8
+			structureDamage = 1.3
+			sailDamage = 0.7
+		Acid = DamageConfig
+			armorEffect = 0.5
+			shipDamage = 0.8
+			airShipDamage = 1.2
+			structureDamage = 0.8
+			sailDamage = 1
+		Electricity = DamageConfig
+			armorEffect = 0.3
+			shipDamage = 1.2
+			airShipDamage = 0.7
+			structureDamage = 0.5
+			sailDamage = 0.4
+		Nether = DamageConfig
+			armorEffect = 0.2
+			shipDamage = 0.7
+			airShipDamage = 0.7
+			structureDamage = 0.7
+			sailDamage = 0.4

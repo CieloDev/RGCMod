@@ -1,0 +1,10 @@
+Version = 6
+	details = "Rykhath's Game Chaning Mod is a huge Alteration to Windward in many ways. I would recomend playing Vanilla first."
+	tags = string[]
+		Balance
+		Overhaul
+		CRAZY
+		Cheats
+	preview = "RGCMod.png"
+	title = "RGCMod"
+	fileID = 2223861715
